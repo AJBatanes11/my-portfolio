@@ -1,7 +1,7 @@
 {
   "name": "my-portfolio-app",
   "version": "0.1.0",
-  "homepage": "https://ajbatanes11.github.io/my-portfolio",
+  "homepage": "https://ajbatanes11.github.io/my-portfolio/",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.11.3",

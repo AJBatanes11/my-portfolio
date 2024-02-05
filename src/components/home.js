@@ -18,7 +18,7 @@ function Home() {
 
     return (
         <>
-        <div className='relative mb-20'>
+        <div className='relative mb-32'>
             <Navigation />
             <Section id="intro" theme="light" setTheme={setTheme}>
                 <TextImage header="Hi, I am AJ Batanes!"

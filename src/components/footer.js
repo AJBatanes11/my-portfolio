@@ -8,7 +8,7 @@ const Footer = () => {
                 <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
                     <span class="self-center text-base font-semibold whitespace-nowrap text-white dark:text-black">Designed and Built by AJ Batanes</span>
                     <div className="w-12 h-auto m-2">
-                        <img src={AJLogo} alt={AJLogo}/>
+                        <img src={AJLogo} alt={AJLogo} />
                     </div>
                 </a>
             </div>

@@ -1,4 +1,4 @@
-import React, { useState, useEffect  } from 'react';
+import React, { useState, useEffect } from 'react';
 import portrait from '../assets/portrait.jpg';
 
 import Navigation from './navigation';
@@ -17,25 +17,25 @@ function Home() {
 
     return (
         <>
-        <div className='relative mb-32'>
-            <Navigation />
-            <Section id="intro" theme="light" setTheme={setTheme}>
-                <TextImage header="Hi, I am AJ Batanes!"
-                subheader="with a robust background in the retail sector, showcasing proficiency in leveraging Shopify Liquid for crafting tailored and effective e-commerce solutions."
-                highlight="Experienced Web Developer"
-                portrait={portrait}
-                />
-            </Section>
-            <Spacer size="5rem"/>
-            <Section id="portfolio" theme="dark" setTheme={setTheme}>
-                <Portfolio />
-            </Section>
-            <Section id="about" theme="light" setTheme={setTheme}>
-                <About />
-            </Section>
-            <Section id="contact" theme="dark" setTheme={setTheme}>
-                <Contact />
-            </Section>
+            <div className='relative mb-32'>
+                <Navigation />
+                <Section id="intro" theme="light" setTheme={setTheme}>
+                    <TextImage header="Hi, I am AJ Batanes!"
+                        subheader="with a robust background in the retail sector, showcasing proficiency in leveraging Shopify Liquid for crafting tailored and effective e-commerce solutions."
+                        highlight="Experienced Web Developer"
+                        portrait={portrait}
+                    />
+                </Section>
+                <Spacer size="5rem" />
+                <Section id="portfolio" theme="dark" setTheme={setTheme}>
+                    <Portfolio />
+                </Section>
+                <Section id="about" theme="light" setTheme={setTheme}>
+                    <About />
+                </Section>
+                <Section id="contact" theme="dark" setTheme={setTheme}>
+                    <Contact />
+                </Section>
             </div>
         </>
     );

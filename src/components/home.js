@@ -1,7 +1,6 @@
 import React, { useState, useEffect  } from 'react';
 import portrait from '../assets/portrait.jpg';
 
-
 import Navigation from './navigation';
 import Section from './section';
 import TextImage from './text-image';
@@ -19,6 +18,7 @@ function Home() {
 
     return (
         <>
+        <div className='relative mb-20'>
             <Navigation />
             <Section id="intro" theme="light" setTheme={setTheme}>
                 <TextImage header="Hi, I am AJ Batanes!"
@@ -27,7 +27,7 @@ function Home() {
                 portrait={portrait}
                 />
             </Section>
-            <Spacer size="20rem"/>
+            <Spacer size="5rem"/>
             <Section id="portfolio" theme="dark" setTheme={setTheme}>
                 <Portfolio />
             </Section>
@@ -37,6 +37,7 @@ function Home() {
             <Section id="contact" theme="dark" setTheme={setTheme}>
                 <Contact />
             </Section>
+            </div>
         </>
     );
 }

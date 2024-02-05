@@ -3,7 +3,7 @@ import React from "react";
 function Navigation() {
     return (
         <nav class="bg-white dark:bg-black md:fixed w-full z-20 top-0 start-0 shadow shadow-zinc-100 dark:shadow-zinc-800">
-            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <div class="max-w-full flex flex-wrap items-center justify-between mx-auto px-20 p-4">
                 <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
                     <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">AJ Batanes</span>
                 </a>

@@ -14,7 +14,7 @@ function TextImage ({ header, subheader, highlight, portrait }) {
                 </div>
                 <div className="justify-center">
                     <div className="relative w-full h-[40rem]">
-                        <img src={portrait} className="object-contain" alt={portrait} />
+                        <img src={portrait} className="object-contain rounded-full" alt={portrait} />
                     </div>
                 </div>
             </div>

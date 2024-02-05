@@ -3,11 +3,10 @@ import portrait from '../assets/portrait.jpg';
 
 import Navigation from './navigation';
 import Section from './section';
-import TextImage from './text-image';
 import Portfolio from './portfolio';
 import About from './about';
 import Contact from './contact';
-import Spacer from './spacer';
+import { TextImage, Spacer } from './custom-snippets'
 
 function Home() {
     const [theme, setTheme] = useState("dark");

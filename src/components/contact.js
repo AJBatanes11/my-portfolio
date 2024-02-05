@@ -1,5 +1,5 @@
 import React from "react";
-import RichText from "./rich-text";
+import { RichText } from './custom-snippets'
 
 const Contact = () => {
     return (

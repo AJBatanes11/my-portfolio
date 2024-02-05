@@ -62,7 +62,7 @@ export const LabeledIcon = ({ imgsrc, alt, label }) => {
         <div className="flex flex-col text-center items-center justify-center align-middle grayscale-[90%] hover:grayscale-0 transition-all duration-500">
             <img src={imgsrc}
                 alt={alt}
-                className="w-auto h-20" />
+                className="w-auto h-12 md:h-16" />
             <span class="text-zinc-500 dark:text-white">{label}</span>
         </div>
     );

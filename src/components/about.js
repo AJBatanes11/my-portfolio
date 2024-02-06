@@ -12,7 +12,7 @@ const About = () => {
                 <h4 className="text-2xl xl:text-3xl font-bold text-black dark:text-white my-10 mx-auto">Skills</h4>
             </div> */}
 
-            <div className="grid grid-cols-3 md:grid-cols-4 gap-10 max-w-screen-lg mx-auto my-20">
+            <div className="grid grid-cols-3 md:grid-cols-3 gap-10 max-w-screen-lg mx-auto my-20">
                 <LabeledIcon
                     imgsrc="https://seeklogo.com/images/S/shopify-logo-1C711BCDE4-seeklogo.com.png"
                     alt="Shopify" label="Shopify"

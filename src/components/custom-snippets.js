@@ -34,9 +34,11 @@ export const Spacer = ({ size }) => {
 
 export const RichText = ({ heading, subheading }) => {
     return (
-        <div className="justify-center text-center align-middle">
+        <div className="justify-center text-center items-center align-middle">
             <h1 className="text-5xl xl:text-7xl font-bold text-black dark:text-white my-10 mx-auto">{heading}</h1>
-            <p className="text-lg font-semibold text-black dark:text-white my-10 mx-auto">{subheading}</p>
+            <p className="text-lg font-semibold text-zinc-500 my-10 mx-auto">
+                {subheading}
+            </p>
         </div>
     )
 };
@@ -63,7 +65,7 @@ export const LabeledIcon = ({ imgsrc, alt, label }) => {
             <img src={imgsrc}
                 alt={alt}
                 className="w-auto h-12 md:h-16" />
-            <span class="text-zinc-500 dark:text-white">{label}</span>
+            <span className="text-zinc-500 dark:text-white">{label}</span>
         </div>
     );
 };

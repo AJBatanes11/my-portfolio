@@ -8,10 +8,6 @@ const About = () => {
             <RichText heading="About" subheading="In 2022, my journey into the realm of computer programming began when I made the pivotal decision to transition to a Systems Development team. Fast-forward to the present day, and I have successfully evolved into a Web Developer, accumulating one year of valuable work experience in the dynamic and ever-evolving field." />
             <DownloadButton file={CV_AnthonyJamesBatanes} downloadname="CV_AnthonyJamesBatanes" btnlabel="Download CV" />
             <Spacer size="2rem" />
-            {/* <div className="justify-center text-center align-middle">
-                <h4 className="text-2xl xl:text-3xl font-bold text-black dark:text-white my-10 mx-auto">Skills</h4>
-            </div> */}
-
             <div className="grid grid-cols-3 md:grid-cols-3 gap-10 max-w-screen-lg mx-auto my-20">
                 <LabeledIcon
                     imgsrc="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/130px-HTML5_logo_and_wordmark.svg.png"

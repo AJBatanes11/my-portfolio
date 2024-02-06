@@ -1,5 +1,9 @@
-import React from "react";
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import FileDownloadIcon from '@mui/icons-material/FileDownload';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faFacebook, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 export function TextImage({ header, subheader, highlight, portrait }) {
     return (
@@ -78,5 +82,86 @@ export const DownloadButton = ({ file, downloadname, btnlabel }) => {
                 {btnlabel} <FileDownloadIcon />
             </button>
         </a>
+    );
+}
+
+export const ContactEmailForm = () => {
+
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs
+            .sendForm('my-portfolio', 'my-portfolio_template', form.current, {
+                publicKey: 'IurLjq1akN5-v_yIt',
+            })
+            .then(
+                () => {
+                    console.log('SUCCESS!');
+                    form.current.reset();
+                },
+                (error) => {
+                    console.log('FAILED...', error.text);
+                },
+            );
+    };
+
+    return (
+        <>
+            <p className="text-black dark:text-white text-left my-10 font-semibold">
+                Drop me a line, and I'll be in touch as soon as possible.
+            </p>
+            <form ref={form} onSubmit={sendEmail}
+                className="flex flex-col gap-6">
+                <label className="text-black dark:text-white text-left font-semibold">Full Name</label>
+                <input
+                    type="text" name="user_name" placeholder="Full Name"
+                    className="h-12 min-h-12 bg-transparent text-black dark:text-white border-[1px] border-solid border-zinc-500 rounded-sm py-2 px-4"
+                />
+                <label className="text-black dark:text-white text-left font-semibold">Contact Number</label>
+                <input
+                    type="tel" name="user_number" placeholder="Contact Number"
+                    className="h-12 min-h-12 bg-transparent text-black dark:text-white border-[1px] border-solid border-zinc-500 rounded-sm py-2 px-4"
+                />
+                <label className="text-black dark:text-white text-left font-semibold">Email</label>
+                <input type="email" name="user_email" placeholder="Email"
+                    className="h-12 min-h-12 bg-transparent text-black dark:text-white border-[1px] border-solid border-zinc-500 rounded-sm py-2 px-4"
+                />
+                <label className="text-black dark:text-white text-left font-semibold">Message</label>
+                <textarea name="message" placeholder="How may I help you?"
+                    className="h-12 min-h-48 bg-transparent text-black dark:text-white border-[1px] border-solid border-zinc-500 rounded-sm py-2 px-4"
+                />
+                <input type="submit" value="Send Enquiry"
+                    className="w-2/5 p-2 ml-auto bg-blue-900 border-2 border-blue-900 font-semibold text-white py-3 px-5 rounded hover:bg-black hover:border-black dark:hover:bg-white dark:hover:text-black dark:hover:border-white"
+                />
+            </form>
+        </>
+    );
+}
+
+export const Socials = () => {
+    return (
+        <>
+            <div className='text-zinc-500 flex flex-col justify-around px-10 py-5'>
+                <a href="/">
+                    <p className="text-lg"><FontAwesomeIcon icon={faEnvelope} size="2x" className="hover:text-white" /> anthonybatanes@gmail.com</p>
+                </a>
+                <a href="/" className="hover:text-white">
+                    <p className="text-lg hover:text-white"><FontAwesomeIcon icon={faPhone} size="2x" className='hover:text-white' /> (+63)977 278 5442</p>
+                </a>
+            </div>
+            <div className='text-zinc-500 flex justify-around px-20 py-5'>
+                <a href="/">
+                    <FontAwesomeIcon icon={faFacebook} size="2x" className="hover:text-blue-500" />
+                </a>
+                <a href="/">
+                    <FontAwesomeIcon icon={faInstagram} size="2x" className="hover:text-orange-500" />
+                </a>
+                <a href="/">
+                    <FontAwesomeIcon icon={faLinkedin} size="2x" className="hover:text-blue-500" />
+                </a>
+            </div>
+        </>
     );
 }

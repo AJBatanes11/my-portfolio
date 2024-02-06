@@ -10,6 +10,7 @@ const Footer = () => {
                     <div className="w-12 h-auto m-2">
                         <img src={AJLogo} alt={AJLogo} />
                     </div>
+                    <p>© November 2021 - February 2024</p>
                 </a>
             </div>
         </div>

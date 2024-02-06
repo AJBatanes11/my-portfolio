@@ -8,19 +8,27 @@ const Contact = () => {
                 <div>
                     <RichText heading="Get in Touch" />
                 </div>
-                <div>
-                    <p className="text-black dark:text-white">
-                        Drop us a line, and we'll be in touch as soon as possible.
+                <div className="px-20">
+                    <p className="text-black dark:text-white text-left my-10 font-semibold">
+                        Drop me a line, and I'll be in touch as soon as possible.
                     </p>
                     <form className="flex flex-col gap-6">
-                        <label className="text-black dark:text-white text-left ">Full Name</label>
-                        <input 
-                        type="text" name="user_name" placeholder="Full Name" className="h-12 min-h-12 text-black dark:text-white border-1 border-white dark:border-yellow-500 rounded-sm py-2 px-4" />
-                        <label className="text-black dark:text-white text-left ">Email</label>
-                        <input type="email" name="user_email" placeholder="Email" />
-                        <label className="text-black dark:text-white text-left ">Message</label>
-                        <textarea name="message" placeholder="Message"/>
-                        <input type="submit" value="send" />
+                        <label className="text-black dark:text-white text-left font-semibold">Full Name</label>
+                        <input
+                            type="text" name="user_name" placeholder="Full Name"
+                            className="h-12 min-h-12 bg-transparent text-black dark:text-white border-[1px] border-solid border-black dark:border-white rounded-sm py-2 px-4"
+                        />
+                        <label className="text-black dark:text-white text-left font-semibold">Email</label>
+                        <input type="email" name="user_email" placeholder="Email"
+                            className="h-12 min-h-12 bg-transparent text-black dark:text-white border-[1px] border-solid border-black dark:border-white rounded-sm py-2 px-4"
+                        />
+                        <label className="text-black dark:text-white text-left font-semibold">Message</label>
+                        <textarea name="message" placeholder="How may I help you?"
+                            className="h-12 min-h-48 bg-transparent text-black dark:text-white border-[1px] border-solid border-black dark:border-white rounded-sm py-2 px-4"
+                        />
+                        <input type="submit" value="Send Enquiry"
+                            className="w-2/5 p-2 ml-auto bg-blue-900 border-2 border-blue-900 font-semibold text-white py-3 px-5 rounded hover:bg-black hover:border-black dark:hover:bg-white dark:hover:text-black dark:hover:border-white"
+                        />
                     </form>
                 </div>
             </div>

@@ -74,7 +74,7 @@ export const DownloadButton = ({ file, downloadname, btnlabel }) => {
     return (
         <a href={file} download={downloadname} target="_blank" rel="noreferrer">
             <button
-                className="bg-blue-900 border-2 border-blue-900 text-white py-3 px-5 rounded hover:bg-black hover:border-black dark:hover:bg-white dark:hover:text-black dark:hover:border-white">
+                className="font-semibold bg-blue-900 border-2 border-blue-900 text-white py-3 px-5 rounded hover:bg-black hover:border-black dark:hover:bg-white dark:hover:text-black dark:hover:border-white">
                 {btnlabel} <FileDownloadIcon />
             </button>
         </a>

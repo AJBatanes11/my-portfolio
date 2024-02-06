@@ -14,10 +14,6 @@ const About = () => {
 
             <div className="grid grid-cols-3 md:grid-cols-3 gap-10 max-w-screen-lg mx-auto my-20">
                 <LabeledIcon
-                    imgsrc="https://seeklogo.com/images/S/shopify-logo-1C711BCDE4-seeklogo.com.png"
-                    alt="Shopify" label="Shopify"
-                />
-                <LabeledIcon
                     imgsrc="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/130px-HTML5_logo_and_wordmark.svg.png"
                     alt="HTML5" label="HTML5"
                 />
@@ -26,16 +22,20 @@ const About = () => {
                     alt="CSS" label="CSS"
                 />
                 <LabeledIcon
-                    imgsrc="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/600px-Tailwind_CSS_Logo.svg.png?20211001194333"
-                    alt="Tailwind" label="Tailwind"
-                />
-                <LabeledIcon
                     imgsrc="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/600px-JavaScript-logo.png?20120221235433"
                     alt="JavaScript" label="JavaScript"
                 />
                 <LabeledIcon
+                    imgsrc="https://seeklogo.com/images/S/shopify-logo-1C711BCDE4-seeklogo.com.png"
+                    alt="Shopify" label="Shopify"
+                />
+                <LabeledIcon
                     imgsrc="https://www.logo.wine/a/logo/React_(web_framework)/React_(web_framework)-Logo.wine.svg"
                     alt="React JS" label="React JS"
+                />
+                <LabeledIcon
+                    imgsrc="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/600px-Tailwind_CSS_Logo.svg.png?20211001194333"
+                    alt="Tailwind" label="Tailwind"
                 />
                 <LabeledIcon
                     imgsrc="https://seeklogo.com/images/B/bootstrap-logo-3C30FB2A16-seeklogo.com.png"

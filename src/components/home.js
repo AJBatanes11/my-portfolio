@@ -2,11 +2,11 @@ import React, { useState, useEffect } from 'react';
 import portrait from '../assets/portrait.jpg';
 
 import Navigation from './navigation';
-import Section from './section';
+import Section from './sections/section';
 import Portfolio from './portfolio';
 import About from './about';
 import Contact from './contact';
-import { TextImage, Spacer } from './custom-snippets'
+import { TextImage, Spacer } from './sections/custom-snippets'
 
 function Home() {
     const [theme, setTheme] = useState("dark");

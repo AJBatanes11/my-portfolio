@@ -1,5 +1,5 @@
 import React from "react";
-import { RichText, ImageHighlight } from './custom-snippets'
+import { RichText, ImageHighlight } from './sections/custom-snippets'
 import Penshoppe from '../assets/Penshoppe.jpg'
 import OXGN from '../assets/OXGN.jpg';
 import Regatta from '../assets/Regatta.jpg';

@@ -8,7 +8,7 @@ function Navigation() {
             <div className="max-w-full flex flex-wrap items-center justify-between mx-auto px-20 p-4">
                 <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
                     <div className="w-8 h-auto">
-                        <ReactSVG src={AJLogo} alt="AJLogo" evalScripts="never" className="transition-colors duration-500 text-black dark:text-white" />
+                        <ReactSVG src={AJLogo} alt="AJLogo" evalScripts="never" className="transition-colors duration-0 text-black dark:text-white" />
                     </div>
                     <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">AJ Batanes</span>
                 </a>

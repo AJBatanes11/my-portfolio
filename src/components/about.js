@@ -1,5 +1,5 @@
 import React from "react";
-import { RichText, Spacer, LabeledIcon, DownloadButton } from './custom-snippets';
+import { RichText, Spacer, LabeledIcon, DownloadButton } from './sections/custom-snippets';
 import CV_AnthonyJamesBatanes from '../assets/CV_AnthonyJamesBatanes.pdf'
 
 const About = () => {

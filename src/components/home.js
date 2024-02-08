@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import portrait from '../assets/portrait.jpg';
 
-import Navigation from './navigation';
 import Section from './sections/section';
 import Portfolio from './portfolio';
 import About from './about';
@@ -17,8 +16,7 @@ function Home() {
 
     return (
         <>
-            <div className='relative mb-32'>
-                <Navigation />
+            <div className='relative mb-52 md:mb-32'>
                 <Section id="intro" theme="light" setTheme={setTheme}>
                     <TextImage header="Hi, I am AJ Batanes!"
                         subheader="with a robust background in the retail sector, showcasing proficiency in leveraging Shopify Liquid for crafting tailored and effective e-commerce solutions."

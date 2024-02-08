@@ -14,35 +14,23 @@ export const ContactEmailForm = () => {
             })
             .then(
                 () => {
-                    console.log('SUCCESS!');
-                    form.current.reset();
-
-                    document.getElementById('emailFormNotification').style.color = 'green';
-                    document.getElementById('emailFormNotification').innerText = 'Email sent successfully!';
-                    document.getElementsByClassName('contactFormContainer').
-
+                    document.querySelector('.submit-form-button').value = "Please wait...";
+                    document.querySelector('.contact-form-container').classList.add('animate-pulse');
                     setTimeout(() => {
-                        document.getElementById('emailFormNotification').innerText = '';
-                        document.getElementById('emailFormNotification').style.color = '';
-                    }, 3000);
+                        document.querySelector('.contact-form-container').classList.add('hidden');
+                        document.querySelector('.success-message').style.display = 'block';
+                        form.current.reset();
+                    }, 1500);
                 },
                 (error) => {
                     console.log('FAILED...', error.text);
-
-                    document.getElementById('emailFormNotification').style.color = 'red';
-                    document.getElementById('emailFormNotification').innerText = 'Error sending email. Please try again later.';
-
-                    setTimeout(() => {
-                        document.getElementById('emailFormNotification').innerText = '';
-                        document.getElementById('emailFormNotification').style.color = '';
-                    }, 3000);
                 },
             );
     };
 
     return (
         <>
-            <div className="contact-form-container hidden">
+            <div className="contact-form-container">
                 <p className="text-black dark:text-white text-left my-5 font-semibold">
                     Drop me a line, and I'll be in touch as soon as possible.
                 </p>
@@ -66,15 +54,12 @@ export const ContactEmailForm = () => {
                     <textarea name="message" placeholder="How may I help you?" required
                         className="h-12 min-h-48 bg-transparent text-black dark:text-white border-[1px] border-solid border-zinc-500 rounded-sm py-2 px-4"
                     />
-                    <div className="flex">
-                        <p id="emailFormNotification" className='m-auto font-semibold animate-pulse'></p>
-                        <input type="submit" value="Send Enquiry"
-                            className="w-2/5 py-3 px-5 ml-auto bg-blue-900 border-2 border-blue-900 font-semibold text-white rounded hover:bg-black hover:border-black dark:hover:bg-white dark:hover:border-white dark:hover:text-black"
-                        />
-                    </div>
+                    <input type="submit" value="Send Enquiry"
+                        className="submit-form-button w-3/5 md:w-2/5 py-3 px-5 ml-auto bg-blue-900 border-2 border-blue-900 font-semibold text-white rounded hover:bg-black hover:border-black dark:hover:bg-white dark:hover:border-white dark:hover:text-black"
+                    />
                 </form>
             </div>
-            <div className="success-message p-10 h-full bg-transparent border-[1px] border-white text-center">
+            <div className="success-message hidden p-10 h-full bg-transparent border-[1px] border-white text-center">
                 <div className="text-black dark:text-white gap-5 flex-col flex h-full justify-center align-middle items-center">
                     <div className="text-4xl md:text-5xl font-semibold">
                         Thank you!

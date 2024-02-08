@@ -5,7 +5,7 @@ import Section from './sections/section';
 import Portfolio from './portfolio';
 import About from './about';
 import Contact from './contact';
-import { TextImage, Spacer } from './sections/custom-snippets'
+import { TextImage } from './sections/custom-snippets'
 
 function Home() {
     const [theme, setTheme] = useState("dark");
@@ -24,7 +24,6 @@ function Home() {
                         portrait={portrait}
                     />
                 </Section>
-                <Spacer size="5rem" />
                 <Section id="portfolio" theme="dark" setTheme={setTheme}>
                     <Portfolio />
                 </Section>

@@ -7,11 +7,11 @@ const Contact = () => {
     return (
         <>
             <div className="grid grid-cols-1 lg:grid-cols-[2fr_3fr] gap-8 m-full max-w-screen-xl mx-auto">
-                <div className="mx-5 md:mx-10">
+                <div className="">
                     <RichText heading="Get in Touch" />
                     <Socials />
                 </div>
-                <div className="mx-5 md:mx-10">
+                <div className="">
                     <ContactEmailForm />
                 </div>
             </div>

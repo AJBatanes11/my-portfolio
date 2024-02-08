@@ -4,7 +4,7 @@ import CV_AnthonyJamesBatanes from '../assets/CV_AnthonyJamesBatanes.pdf'
 
 const About = () => {
     return (
-        <div className="max-w-screen-xl mx-auto my-20">
+        <div className="w-full max-w-screen-xl mx-auto my-20">
             <RichText heading="About" subheading="In 2022, my journey into the realm of computer programming began when I made the pivotal decision to transition to a Systems Development team. Fast-forward to the present day, and I have successfully evolved into a Web Developer, accumulating one year of valuable work experience in the dynamic and ever-evolving field." />
             <DownloadButton file={CV_AnthonyJamesBatanes} downloadname="CV_AnthonyJamesBatanes" btnlabel="Download CV" />
             <Spacer size="2rem" />

@@ -7,6 +7,8 @@ export const ContactEmailForm = () => {
 
     const sendEmail = (e) => {
         e.preventDefault();
+        document.querySelector('.submit-form-button').value = "Please wait...";
+        document.querySelector('.contact-form-container').classList.add('animate-pulse');
 
         emailjs
             .sendForm('my-portfolio', 'my-portfolio_template', form.current, {
@@ -14,16 +16,24 @@ export const ContactEmailForm = () => {
             })
             .then(
                 () => {
-                    document.querySelector('.submit-form-button').value = "Please wait...";
-                    document.querySelector('.contact-form-container').classList.add('animate-pulse');
                     setTimeout(() => {
+                        document.querySelector('.success-message_heading').innerHTML = "Thank you!";
+                        document.querySelector('.success-message_subheading').innerHTML = "I've received your message. I will contact you soon."
+                        document.querySelector('.success-message_wrapper').style.borderColor = "green";
                         document.querySelector('.contact-form-container').classList.add('hidden');
                         document.querySelector('.success-message').style.display = 'block';
                         form.current.reset();
                     }, 1500);
                 },
                 (error) => {
-                    console.log('FAILED...', error.text);
+                    setTimeout(() => {
+                        document.querySelector('.success-message_heading').innerHTML = "Error";
+                        document.querySelector('.success-message_subheading').innerHTML = "Please try again later."
+                        document.querySelector('.success-message_wrapper').style.borderColor = "red";
+                        document.querySelector('.contact-form-container').classList.add('hidden');
+                        document.querySelector('.success-message').style.display = 'block';
+                        form.current.reset();
+                    }, 1500);
                 },
             );
     };
@@ -59,15 +69,17 @@ export const ContactEmailForm = () => {
                     />
                 </form>
             </div>
-            <div className="success-message hidden p-10 h-full bg-transparent border-[1px] border-white text-center">
+            <div className="success-message hidden py-40 px-5 md:px-10 md:py-20 h-full bg-transparent min-h-[75vh]">
+            <div className="success-message_wrapper h-full border-[1px] border-white text-center">
                 <div className="text-black dark:text-white gap-5 flex-col flex h-full justify-center align-middle items-center">
-                    <div className="text-4xl md:text-5xl font-semibold">
+                    <div className="success-message_heading text-4xl md:text-5xl font-semibold">
                         Thank you!
                     </div>
-                    <div className="">
+                    <div className="success-message_subheading">
                         I've received your message. I will contact you soon.
                     </div>
                 </div>
+            </div>
             </div>
         </>
     );

@@ -1,24 +1,24 @@
 {
   "files": {
     "main.css": "/my-portfolio/static/css/main.17fa5f06.css",
-    "main.js": "/my-portfolio/static/js/main.ddd3f2e1.js",
+    "main.js": "/my-portfolio/static/js/main.dfc1acef.js",
     "static/js/592.9525cf69.chunk.js": "/my-portfolio/static/js/592.9525cf69.chunk.js",
     "static/media/OXGN.jpg": "/my-portfolio/static/media/OXGN.b2c7002420e217ca9622.jpg",
     "static/media/portrait.jpg": "/my-portfolio/static/media/portrait.58de5505d09a00384583.jpg",
     "static/media/Penshoppe.jpg": "/my-portfolio/static/media/Penshoppe.4c703b98884aaa8e031f.jpg",
     "static/media/Regatta.jpg": "/my-portfolio/static/media/Regatta.989dc7a968aff33fd78a.jpg",
-    "static/media/CV_AnthonyJamesBatanes.pdf": "/my-portfolio/static/media/CV_AnthonyJamesBatanes.f890fd435eed97137f64.pdf",
     "static/media/ForMe.jpg": "/my-portfolio/static/media/ForMe.9e5e21bece4aad41dab2.jpg",
+    "static/media/CV_AnthonyJamesBatanes.pdf": "/my-portfolio/static/media/CV_AnthonyJamesBatanes.701fa850e2ef06240410.pdf",
     "static/media/Bocu.jpg": "/my-portfolio/static/media/Bocu.80a68f97440049b3de33.jpg",
     "static/media/Memo.jpg": "/my-portfolio/static/media/Memo.9a6843f087d3c8510212.jpg",
     "index.html": "/my-portfolio/index.html",
     "static/media/AJLogo.svg": "/my-portfolio/static/media/AJLogo.20242c51682e63b9a311d928fdded4a0.svg",
     "main.17fa5f06.css.map": "/my-portfolio/static/css/main.17fa5f06.css.map",
-    "main.ddd3f2e1.js.map": "/my-portfolio/static/js/main.ddd3f2e1.js.map",
+    "main.dfc1acef.js.map": "/my-portfolio/static/js/main.dfc1acef.js.map",
     "592.9525cf69.chunk.js.map": "/my-portfolio/static/js/592.9525cf69.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.17fa5f06.css",
-    "static/js/main.ddd3f2e1.js"
+    "static/js/main.dfc1acef.js"
   ]
 }

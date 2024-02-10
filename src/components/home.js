@@ -6,9 +6,15 @@ import Portfolio from './portfolio';
 import About from './about';
 import Contact from './contact';
 import { TextImage } from './sections/custom-snippets'
+import { MouseCursor } from './sections/custom-snippets';
 
 function Home() {
     const [theme, setTheme] = useState("dark");
+    const [hoverStatusHome, setHoverStatusHome] = useState('');
+
+    const handleHoverStatus = (data) => {
+        setHoverStatusHome(data);
+    }
 
     useEffect(() => {
         document.body.classList.toggle("dark", theme === "dark");
@@ -16,6 +22,7 @@ function Home() {
 
     return (
         <>
+            <MouseCursor isHovered={hoverStatusHome} />
             <div className='relative mb-52 md:mb-32'>
                 <Section id="intro" theme="light" setTheme={setTheme}>
                     <TextImage header="Hi, I am AJ Batanes!"
@@ -24,8 +31,8 @@ function Home() {
                         portrait={portrait}
                     />
                 </Section>
-                <Section id="portfolio" theme="dark" setTheme={setTheme}>
-                    <Portfolio />
+                <Section id="portfolio" theme="dark"  setTheme={setTheme}>
+                    <Portfolio hoverStatusPortfolio={handleHoverStatus} />
                 </Section>
                 <Section id="about" theme="light" setTheme={setTheme}>
                     <About />

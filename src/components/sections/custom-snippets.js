@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { motion } from "framer-motion";
 import FileDownloadIcon from '@mui/icons-material/FileDownload';
 
 export function TextImage({ header, subheader, highlight, portrait }) {
@@ -34,20 +35,72 @@ export const Spacer = ({ size }) => {
 
 export const RichText = ({ heading, subheading }) => {
     return (
-        <div className="justify-center text-center items-center align-middle">
-            <h1 className="text-5xl xl:text-7xl font-bold text-black dark:text-white my-10 mx-auto">{heading}</h1>
-            <p className="text-lg font-semibold text-zinc-500 my-10 mx-auto">
-                {subheading}
-            </p>
+        <div className="richtext">
+            <div className="justify-center text-center items-center align-middle">
+                <h1 className="text-5xl xl:text-7xl font-bold text-black dark:text-white my-10 mx-auto">{heading}</h1>
+                <p className="text-lg font-semibold text-zinc-500 my-10 mx-auto">
+                    {subheading}
+                </p>
+            </div>
         </div>
     )
 };
 
-export const ImageHighlight = ({ image, heading, text }) => {
+export const MouseCursor = ({isHovered}) => {
+    
+    // DITO UNG PART NA GAGAWIN - NAG SESEND NA NG STATUS FROM IMAGEHIGHLIGHT TO PORTFOLIO TO HOME THEN TO MOUSECURSOR
+    console.log({isHovered});
+    // DITO UNG PART NA GAGAWIN - NAG SESEND NA NG STATUS FROM IMAGEHIGHLIGHT TO PORTFOLIO TO HOME THEN TO MOUSECURSOR
+    
+    const [mousePosition, setMousePosition] = useState({
+        x: null,
+        y: null
+    });
+    useEffect(() => {
+        const mouseMove = e => {
+            setMousePosition({
+                x: e.clientX,
+                y: e.clientY
+            })
+        }
+
+        window.addEventListener('mousemove', mouseMove);
+
+        return () => {
+            window.removeEventListener("mousemove", mouseMove);
+        }
+    }, []);
+
+    const variants = {
+        default: {
+            x: mousePosition.x - 15,
+            y: mousePosition.y + 5
+        }
+    };
+
     return (
-        <div>
+        <div className="mouse-cursor">
+            <motion.div className="cursor pointer-events-none hidden sm:block z-40 rounded-full w-2 h-2 bg-black dark:bg-white fixed transition-none duration-0 animate-none"
+                variants={variants}
+                animate="default" />
+        </div>
+    );
+};
+
+export const ImageHighlight = ({ image, heading, text, hoverstatus }) => {
+
+    const handleMouseEnter = () => {
+        hoverstatus(true);
+    };
+
+    const handleMouseLeave = () => {
+        hoverstatus(false);
+    };
+
+    return (
+        <div className="image-highlight">
             <div className="flex flex-col">
-                <div className="relative overflow-hidden w-full h-auto cursor-pointer ">
+                <div className="relative overflow-hidden w-full h-auto cursor-pointer" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
                     <img src={image} alt={heading} className="w-full h-auto object-cover brightness-75 grayscale-[25%] hover:grayscale-0 hover:brightness-100 hover:scale-105 transition-all duration-500" />
                 </div>
                 <div className="flex flex-col text-left md:text-justify md:flex-row md:items-center justify-between w-full my-5">

@@ -15,7 +15,10 @@ const Portfolio = ({ hoverStatusPortfolio }) => {
 
     return (
         <>
-            <RichText heading="Portfolio" subheading="Notable Projects" />
+            <RichText
+                heading="Recent Work"
+                subheading=""
+            />
             <div className="grid grid-cols-1 md:grid-cols-2 gap-16 max-w-screen-xl mx-auto my-20">
                 <ImageHighlight hoverstatus={handleHoverStatus}
                     image={Penshoppe}

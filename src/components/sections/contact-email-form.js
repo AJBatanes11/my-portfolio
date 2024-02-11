@@ -94,7 +94,7 @@ export const ContactEmailForm = () => {
                     <input
                         type="submit"
                         value="Send Enquiry"
-                        className="submit-form-button w-3/5 md:w-2/5 py-3 px-5 ml-auto bg-blue-900 border-2 border-blue-900 font-semibold text-white rounded hover:bg-black hover:border-black dark:hover:bg-white dark:hover:border-white dark:hover:text-black"
+                        className="submit-form-button w-3/5 md:w-2/5 py-3 px-5 ml-auto bg-blue-500 border-2 border-blue-500 font-semibold text-white rounded-full hover:bg-black hover:border-black dark:hover:bg-white dark:hover:border-white dark:hover:text-black"
                     />
                 </form>
             </div>

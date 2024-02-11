@@ -1,5 +1,5 @@
 import React from "react";
-import { RichText, Spacer, LabeledIcon, DownloadButton } from './sections/custom-snippets';
+import { RichText, LabeledIcon, DownloadButton, Spacer } from './sections/custom-snippets';
 import CV_AnthonyJamesBatanes from '../assets/CV_AnthonyJamesBatanes.pdf'
 
 const About = () => {
@@ -8,13 +8,13 @@ const About = () => {
         <div className="w-full max-w-screen-xl mx-auto my-20 justify-center text-center">
             <RichText
                 heading="About Me"
-                subheading="With 2 years of experience, I specialize in creating visually appealing and user-friendly websites. From responsive designs to optimized performance, I strive for excellence in every project. Let's collaborate and build something awesome together!With 2 years of experience, I specialize in creating visually appealing and user-friendly websites. From responsive designs to optimized performance, I strive for excellence in every project. Let's collaborate and build something awesome together!"
+                subheading="With 2 years of experience, I specialize in creating visually appealing and user-friendly websites. From responsive designs to optimized performance, I strive for excellence in every project. Let's collaborate and build something awesome together!With 2 years of experience, I specialize in creating visually appealing and user-friendly websites. From responsive designs to optimized performance, I strive for excellence in every project."
             />
-            <DownloadButton file={CV_AnthonyJamesBatanes}
-                downloadname="CV_AnthonyJamesBatanes"
-                btnlabel="Download CV"
+            <Spacer size="2px" />
+            <RichText
+                heading=""
+                subheading="Proficiency in:"
             />
-            <Spacer size="2rem" />
             <div className="grid grid-cols-3 md:grid-cols-3 gap-10 max-w-screen-lg mx-auto my-20">
                 <LabeledIcon
                     imgsrc="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/130px-HTML5_logo_and_wordmark.svg.png"
@@ -53,6 +53,11 @@ const About = () => {
                     label="SEO"
                 />
             </div>
+            <Spacer size="2px" />
+            <DownloadButton file={CV_AnthonyJamesBatanes}
+                downloadname="CV_AnthonyJamesBatanes"
+                btnlabel="Download CV"
+            />
         </div>
     );
 }

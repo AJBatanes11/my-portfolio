@@ -20,7 +20,10 @@ function Navigation() {
         <>
             <nav className="bg-white dark:bg-black fixed w-full z-30 top-0 start-0 shadow shadow-zinc-100 dark:shadow-zinc-800">
                 <div className="max-w-full flex flex-wrap items-center justify-between mx-auto px-5 lg:px-20 p-4">
-                    <a href="#intro" className="flex items-center space-x-3 rtl:space-x-reverse">
+                    <a
+                        href="#intro"
+                        className="flex items-center space-x-3 rtl:space-x-reverse"
+                    >
                         <div className="w-8 h-auto">
                             <ReactSVG src={AJLogo} alt="AJLogo" evalScripts="never" className="transition-colors duration-0 text-black dark:text-white" />
                         </div>

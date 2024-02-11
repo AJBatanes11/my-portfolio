@@ -10,8 +10,8 @@ export function TextImage({ header, subheader, highlight, portrait }) {
                     <h1 className="text-5xl xl:text-7xl font-bold text-black dark:text-white">
                         {header}
                     </h1>
-                    <p className="text-lg font-semibold text-zinc-400">
-                        <span className="text-black dark:text-white">
+                    <p className="text-lg font-normal">
+                        <span className="font-semibold">
                             {highlight}
                         </span> {subheader}
                     </p>
@@ -45,7 +45,7 @@ export const RichText = ({ heading, subheading }) => {
                 <h1 className="text-5xl xl:text-7xl font-bold text-black dark:text-white my-10 mx-auto">
                     {heading}
                 </h1>
-                <p className="text-lg font-semibold text-zinc-500 my-10 mx-auto">
+                <p className="text-lg font-normal text-black dark:white my-10 mx-auto">
                     {subheading}
                 </p>
             </div>
@@ -185,7 +185,7 @@ export const DownloadButton = ({ file, downloadname, btnlabel }) => {
             rel="noopener noreferrer"
         >
             <button
-                className="m-auto font-semibold bg-blue-900 border-2 border-blue-900 text-white py-3 px-5 rounded hover:bg-black hover:border-black dark:hover:bg-white dark:hover:text-black dark:hover:border-white">
+                className="m-auto font-semibold bg-blue-500 border-2 border-blue-500 text-white py-3 px-5 rounded-full hover:bg-black hover:border-black dark:hover:bg-white dark:hover:text-black dark:hover:border-white">
                 {btnlabel} <FileDownloadIcon />
             </button>
         </a>

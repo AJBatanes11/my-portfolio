@@ -19,7 +19,7 @@ const Portfolio = ({ hoverStatusPortfolio }) => {
                 heading="Recent Work"
                 subheading=""
             />
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-16 max-w-screen-xl mx-auto my-20">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-20 max-w-screen-xl mx-auto my-20">
                 <ImageHighlight hoverstatus={handleHoverStatus}
                     image={Penshoppe}
                     link="https://www.penshoppe.com/"

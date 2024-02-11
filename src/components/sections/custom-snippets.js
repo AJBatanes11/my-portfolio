@@ -46,16 +46,14 @@ export const RichText = ({ heading, subheading }) => {
     )
 };
 
-export const MouseCursor = ({isHovered}) => {
-    
-    // DITO UNG PART NA GAGAWIN - NAG SESEND NA NG STATUS FROM IMAGEHIGHLIGHT TO PORTFOLIO TO HOME THEN TO MOUSECURSOR
-    console.log({isHovered});
-    // DITO UNG PART NA GAGAWIN - NAG SESEND NA NG STATUS FROM IMAGEHIGHLIGHT TO PORTFOLIO TO HOME THEN TO MOUSECURSOR
-    
+export const MouseCursor = ({ isHovered }) => {
+
     const [mousePosition, setMousePosition] = useState({
         x: null,
         y: null
     });
+    const [cursorVariant, setCursorVariant] = useState("default");
+
     useEffect(() => {
         const mouseMove = e => {
             setMousePosition({
@@ -71,23 +69,44 @@ export const MouseCursor = ({isHovered}) => {
         }
     }, []);
 
+    useEffect(() => {
+        if (isHovered) {
+            setCursorVariant("text");
+            document.querySelector(".cursor-text").style.color = "black";
+            document.querySelector(".cursor-text").style.display = "flex";
+
+        } else {
+            setCursorVariant("default");
+            document.querySelector(".cursor-text").style.display = "none";
+        }
+    }, [isHovered]);
+
     const variants = {
         default: {
-            x: mousePosition.x - 15,
-            y: mousePosition.y + 5
+            x: mousePosition.x - 16,
+            y: mousePosition.y - 16,
+        },
+        text: {
+            height: 100,
+            width: 100,
+            x: mousePosition.x - 80,
+            y: mousePosition.y - 80,
+            backgroundColor: "white",
         }
-    };
+    }
 
     return (
         <div className="mouse-cursor">
-            <motion.div className="cursor pointer-events-none hidden sm:block z-40 rounded-full w-2 h-2 bg-black dark:bg-white fixed transition-none duration-0 animate-none"
+            <motion.div className="cursor pointer-events-none hidden overflow-hidden text-wrap text-center sm:block z-40 rounded-full w-2 h-2 bg-black dark:bg-white text-white dark:text-black fixed transition-none duration-0 animate-none"
                 variants={variants}
-                animate="default" />
+                animate={cursorVariant}>
+                <p className="cursor-text m-auto p-5 text-xs font-semibold flex justify-center items-center flex-wrap h-full">VIEW WEBSITE</p>
+            </motion.div>
         </div>
     );
 };
 
-export const ImageHighlight = ({ image, heading, text, hoverstatus }) => {
+export const ImageHighlight = ({ image, link, heading, text, hoverstatus }) => {
 
     const handleMouseEnter = () => {
         hoverstatus(true);
@@ -100,9 +119,11 @@ export const ImageHighlight = ({ image, heading, text, hoverstatus }) => {
     return (
         <div className="image-highlight">
             <div className="flex flex-col">
-                <div className="relative overflow-hidden w-full h-auto cursor-pointer" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-                    <img src={image} alt={heading} className="w-full h-auto object-cover brightness-75 grayscale-[25%] hover:grayscale-0 hover:brightness-100 hover:scale-105 transition-all duration-500" />
-                </div>
+                <a href={link} alt={heading} target="_blank">
+                    <div className="relative overflow-hidden w-full h-auto cursor-pointer" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+                        <img src={image} alt={heading} className="w-full h-auto object-cover brightness-75 grayscale-[25%] hover:grayscale-0 hover:brightness-100 hover:scale-105 transition-all duration-500" />
+                    </div>
+                </a>
                 <div className="flex flex-col text-left md:text-justify md:flex-row md:items-center justify-between w-full my-5">
                     <h4 className="text-4xl font-semibold text-black dark:text-white my-2">{heading}</h4>
                     <p className="text-base text-zinc-500 my-2 md:text-right md:pl-16">{text}</p>

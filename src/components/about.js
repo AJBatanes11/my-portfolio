@@ -8,7 +8,7 @@ const About = () => {
         <div className="w-full max-w-screen-xl mx-auto my-20 justify-center text-center">
             <RichText
                 heading="About Me"
-                subheading="With 2 years of experience, I specialize in creating visually appealing and user-friendly websites. From responsive designs to optimized performance, I strive for excellence in every project. Let's collaborate and build something awesome together!With 2 years of experience, I specialize in creating visually appealing and user-friendly websites. From responsive designs to optimized performance, I strive for excellence in every project."
+                subheading="With 2 years of experience, I specialize in creating visually appealing and user-friendly websites. From responsive designs to optimized performance, I strive for excellence in every project."
             />
             <Spacer size="2px" />
             <RichText

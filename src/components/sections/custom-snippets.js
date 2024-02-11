@@ -11,12 +11,18 @@ export function TextImage({ header, subheader, highlight, portrait }) {
                         {header}
                     </h1>
                     <p className="text-lg font-semibold text-zinc-400">
-                        <span className="text-black dark:text-white">{highlight} </span>{subheader}
+                        <span className="text-black dark:text-white">
+                            {highlight}
+                        </span> {subheader}
                     </p>
                 </div>
                 <div className="justify-center">
                     <div className="relative w-full h-[40rem]">
-                        <img src={portrait} className="object-contain rounded-full" alt={portrait} />
+                        <img
+                            src={portrait}
+                            className="object-contain rounded-full"
+                            alt={portrait}
+                        />
                     </div>
                 </div>
             </div>
@@ -29,15 +35,16 @@ export const Spacer = ({ size }) => {
         paddingTop: size,
     };
 
-    return <div className="bg-white dark:bg-black" style={spacingStyle}>
-    </div>;
+    return <div className="bg-white dark:bg-black" style={spacingStyle}></div>;
 };
 
 export const RichText = ({ heading, subheading }) => {
     return (
         <div className="richtext">
             <div className="justify-center text-center items-center align-middle">
-                <h1 className="text-5xl xl:text-7xl font-bold text-black dark:text-white my-10 mx-auto">{heading}</h1>
+                <h1 className="text-5xl xl:text-7xl font-bold text-black dark:text-white my-10 mx-auto">
+                    {heading}
+                </h1>
                 <p className="text-lg font-semibold text-zinc-500 my-10 mx-auto">
                     {subheading}
                 </p>
@@ -97,10 +104,13 @@ export const MouseCursor = ({ isHovered }) => {
 
     return (
         <div className="mouse-cursor">
-            <motion.div className="cursor pointer-events-none hidden overflow-hidden text-wrap text-center sm:block z-40 rounded-full w-2 h-2 bg-black dark:bg-white text-white dark:text-black fixed transition-none duration-0 animate-none"
+            <motion.div
+                className="cursor pointer-events-none hidden overflow-hidden text-wrap text-center sm:block z-40 rounded-full w-2 h-2 bg-black dark:bg-white text-white dark:text-black fixed transition-none duration-0 animate-none"
                 variants={variants}
                 animate={cursorVariant}>
-                <p className="cursor-text m-auto p-5 text-xs font-semibold flex justify-center items-center flex-wrap h-full">VIEW WEBSITE</p>
+                <p className="cursor-text m-auto p-5 text-xs font-semibold flex justify-center items-center flex-wrap h-full">
+                    VIEW WEBSITE
+                </p>
             </motion.div>
         </div>
     );
@@ -119,34 +129,61 @@ export const ImageHighlight = ({ image, link, heading, text, hoverstatus }) => {
     return (
         <div className="image-highlight">
             <div className="flex flex-col">
-                <a href={link} alt={heading} target="_blank">
-                    <div className="relative overflow-hidden w-full h-auto cursor-pointer" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-                        <img src={image} alt={heading} className="w-full h-auto object-cover brightness-75 grayscale-[25%] hover:grayscale-0 hover:brightness-100 hover:scale-105 transition-all duration-500" />
+                <a
+                    href={link}
+                    alt={heading}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <div
+                        className="relative overflow-hidden w-full h-auto cursor-pointer"
+                        onMouseEnter={handleMouseEnter}
+                        onMouseLeave={handleMouseLeave}
+                    >
+                        <img
+                            src={image}
+                            alt={heading}
+                            className="w-full h-auto object-cover brightness-75 grayscale-[25%] hover:grayscale-0 hover:brightness-100 hover:scale-105 transition-all duration-500"
+                        />
                     </div>
                 </a>
                 <div className="flex flex-col text-left md:text-justify md:flex-row md:items-center justify-between w-full my-5">
-                    <h4 className="text-4xl font-semibold text-black dark:text-white my-2">{heading}</h4>
-                    <p className="text-base text-zinc-500 my-2 md:text-right md:pl-16">{text}</p>
+                    <h4 className="text-4xl font-semibold text-black dark:text-white my-2">
+                        {heading}
+                    </h4>
+                    <p className="text-base text-zinc-500 my-2 md:text-right md:pl-16">
+                        {text}
+                    </p>
                 </div>
             </div>
         </div>
     );
 };
 
-export const LabeledIcon = ({ imgsrc, alt, label }) => {
+export const LabeledIcon = ({ imgsrc, label }) => {
     return (
-        <div className="flex flex-col text-center items-center justify-center align-middle grayscale-[90%] hover:grayscale-0 transition-all duration-500">
-            <img src={imgsrc}
-                alt={alt}
-                className="w-auto h-12 md:h-16" />
-            <span className="text-zinc-500 dark:text-white">{label}</span>
+        <div className="flex flex-col text-center items-center justify-center align-middle">
+            <img
+                src={imgsrc}
+                alt={label}
+                className="w-auto h-12 md:h-16"
+            />
+            <span className="text-zinc-500 dark:text-white">
+                {label}
+            </span>
         </div>
     );
 };
 
 export const DownloadButton = ({ file, downloadname, btnlabel }) => {
     return (
-        <a href={file} download={downloadname} target="_blank" rel="noreferrer">
+        <a
+            href={file}
+            download={downloadname}
+            alt={btnlabel}
+            target="_blank"
+            rel="noopener noreferrer"
+        >
             <button
                 className="m-auto font-semibold bg-blue-900 border-2 border-blue-900 text-white py-3 px-5 rounded hover:bg-black hover:border-black dark:hover:bg-white dark:hover:text-black dark:hover:border-white">
                 {btnlabel} <FileDownloadIcon />

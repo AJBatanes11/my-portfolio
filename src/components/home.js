@@ -26,8 +26,8 @@ function Home() {
             <div className='relative mb-52 md:mb-32'>
                 <Section id="intro" theme="light" setTheme={setTheme}>
                     <TextImage header="Hi, I am AJ Batanes!"
-                        subheader="with a robust background in the retail sector, showcasing proficiency in leveraging Shopify Liquid for crafting tailored and effective e-commerce solutions."
-                        highlight="Experienced Web Developer"
+                        subheader="with extensive experience in the retail industry, demonstrating expertise in utilizing Shopify Liquid to create customized and impactful e-commerce solutions."
+                        highlight="Skilled web developer"
                         portrait={portrait}
                     />
                 </Section>

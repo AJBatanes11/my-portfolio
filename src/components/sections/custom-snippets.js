@@ -10,7 +10,7 @@ export function TextImage({ header, subheader, highlight, portrait }) {
                     <h1 className="text-5xl xl:text-7xl font-bold text-black dark:text-white">
                         {header}
                     </h1>
-                    <p className="text-lg font-normal">
+                    <p className="text-lg font-normal text-black dark:text-white">
                         <span className="font-semibold">
                             {highlight}
                         </span> {subheader}

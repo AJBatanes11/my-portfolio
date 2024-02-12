@@ -1,5 +1,5 @@
 import React from "react";
-import { RichText, ImageHighlight } from './sections/custom-snippets'
+import { RichText, ImageHighlight, Spacer } from './sections/custom-snippets'
 import Penshoppe from '../assets/Penshoppe.jpg'
 import OXGN from '../assets/OXGN.jpg';
 import Regatta from '../assets/Regatta.jpg';
@@ -20,6 +20,7 @@ const Portfolio = ({ hoverStatusPortfolio }) => {
                     heading="Recent Work"
                     subheading=""
                 />
+                <Spacer size="2.5rem" />
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-20 m-auto">
                     <ImageHighlight
                         hoverstatus={handleHoverStatus}

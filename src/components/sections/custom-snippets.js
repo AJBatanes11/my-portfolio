@@ -168,7 +168,7 @@ export const LabeledIcon = ({ imgsrc, label }) => {
                 alt={label}
                 className="w-auto h-12 md:h-16"
             />
-            <span className="text-zinc-500 dark:text-white">
+            <span className="text-black dark:text-white">
                 {label}
             </span>
         </div>

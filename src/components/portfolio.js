@@ -15,7 +15,7 @@ const Portfolio = ({ hoverStatusPortfolio }) => {
 
     return (
         <>
-            <div className="max-w-screen-xl mx-auto my-20">
+            <div className="max-w-screen-xl mx-auto">
                 <RichText
                     heading="Recent Work"
                     subheading=""

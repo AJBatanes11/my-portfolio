@@ -1,12 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import portrait from '../assets/portrait.jpg';
-
 import Section from './sections/section';
+import { TextImage, MouseCursor } from './sections/custom-snippets'
 import Portfolio from './portfolio';
 import About from './about';
 import Contact from './contact';
-import { TextImage } from './sections/custom-snippets'
-import { MouseCursor } from './sections/custom-snippets';
 
 function Home() {
     const [theme, setTheme] = useState("dark");
@@ -23,7 +21,7 @@ function Home() {
     return (
         <>
             <MouseCursor hoverstatus={hoverStatusHome} />
-            <div className='relative my-10 mb-52 md:mb-32'>
+            <div className='relative mb-52 md:mb-32'>
                 <Section id="intro" theme="light" setTheme={setTheme}>
                     <TextImage header="Hi, I am AJ Batanes!"
                         subheader="with extensive experience in the retail industry, demonstrating expertise in utilizing Shopify Liquid to create customized and impactful e-commerce solutions."

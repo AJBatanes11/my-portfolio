@@ -5,7 +5,7 @@ import CV_AnthonyJamesBatanes from '../assets/CV_AnthonyJamesBatanes.pdf'
 const About = () => {
 
     return (
-        <div className="w-full max-w-screen-xl mx-auto my-20 justify-center text-center">
+        <div className="w-full max-w-screen-xl mx-auto justify-center text-center">
             <RichText
                 heading="About Me"
                 subheading="I specialize in crafting visually appealing and user-friendly websites. From designing responsive layouts to optimizing performance, I am dedicated to achieving excellence in every project."

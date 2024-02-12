@@ -16,8 +16,8 @@ export function TextImage({ header, subheader, highlight, portrait }) {
                         </span> {subheader}
                     </p>
                 </div>
-                <div className="justify-center">
-                    <div className="relative w-full h-[40rem]">
+                <div className="flex items-center justify-center">
+                    <div className="relative w-full h-auto">
                         <img
                             src={portrait}
                             className="object-contain rounded-full"
@@ -41,11 +41,11 @@ export const Spacer = ({ size }) => {
 export const RichText = ({ heading, subheading }) => {
     return (
         <div className="richtext">
-            <div className="justify-center text-center items-center align-middle">
-                <h1 className="text-5xl xl:text-7xl font-bold text-black dark:text-white my-10 mx-auto">
+            <div className="flex flex-col gap-10 justify-center text-center items-center align-middle">
+                <h1 className="text-5xl xl:text-7xl font-bold text-black dark:text-white mx-auto">
                     {heading}
                 </h1>
-                <p className="text-lg font-normal text-black dark:white my-10 mx-auto">
+                <p className="text-lg font-normal text-black dark:white mx-auto">
                     {subheading}
                 </p>
             </div>

@@ -45,7 +45,7 @@ export const RichText = ({ heading, subheading }) => {
                 <h1 className="text-5xl xl:text-7xl font-bold text-black dark:text-white mx-auto">
                     {heading}
                 </h1>
-                <p className="text-lg font-normal text-black dark:white mx-auto">
+                <p className="text-lg font-normal text-black dark:text-white mx-auto">
                     {subheading}
                 </p>
             </div>
@@ -185,7 +185,7 @@ export const DownloadButton = ({ file, downloadname, btnlabel }) => {
             rel="noopener noreferrer"
         >
             <button
-                className="m-auto font-semibold bg-blue-500 border-2 border-blue-500 text-white py-4 px-7 rounded-full hover:bg-black hover:border-black dark:hover:bg-white dark:hover:text-black dark:hover:border-white">
+                className="m-auto font-semibold bg-blue-500 border-2 border-blue-500 text-white py-3 px-5 md:py-4 md:px-7 rounded-full hover:bg-black hover:border-black dark:hover:bg-white dark:hover:text-black dark:hover:border-white">
                 {btnlabel} <FileDownloadIcon />
             </button>
         </a>

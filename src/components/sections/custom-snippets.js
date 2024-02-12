@@ -53,7 +53,7 @@ export const RichText = ({ heading, subheading }) => {
     )
 };
 
-export const MouseCursor = ({ isHovered }) => {
+export const MouseCursor = ({ hoverstatus }) => {
 
     const [mousePosition, setMousePosition] = useState({
         x: null,
@@ -77,21 +77,20 @@ export const MouseCursor = ({ isHovered }) => {
     }, []);
 
     useEffect(() => {
-        if (isHovered) {
+        if (hoverstatus === "imagehighlight") {
             setCursorVariant("text");
             document.querySelector(".cursor-text").style.color = "black";
             document.querySelector(".cursor-text").style.display = "flex";
-
         } else {
             setCursorVariant("default");
             document.querySelector(".cursor-text").style.display = "none";
         }
-    }, [isHovered]);
+    }, [hoverstatus]);
 
     const variants = {
         default: {
             x: mousePosition.x - 15,
-            y: mousePosition.y + 10,
+            y: mousePosition.y - 15,
             backgroundColor: "#71717a",
         },
         text: {
@@ -99,7 +98,7 @@ export const MouseCursor = ({ isHovered }) => {
             width: 100,
             x: mousePosition.x - 80,
             y: mousePosition.y - 80,
-            backgroundColor: "white",
+            backgroundColor: "#FFFFFF",
         }
     }
 
@@ -120,11 +119,11 @@ export const MouseCursor = ({ isHovered }) => {
 export const ImageHighlight = ({ image, link, heading, text, hoverstatus }) => {
 
     const handleMouseEnter = () => {
-        hoverstatus(true);
+        hoverstatus("imagehighlight");
     };
 
     const handleMouseLeave = () => {
-        hoverstatus(false);
+        hoverstatus("default");
     };
 
     return (
@@ -152,7 +151,7 @@ export const ImageHighlight = ({ image, link, heading, text, hoverstatus }) => {
                     <h4 className="text-4xl font-semibold text-black dark:text-white my-2">
                         {heading}
                     </h4>
-                    <p className="text-base text-zinc-500 my-2 md:text-right md:pl-16">
+                    <p className="text-base text-black dark:text-white my-2 md:text-right md:pl-16">
                         {text}
                     </p>
                 </div>
@@ -186,7 +185,7 @@ export const DownloadButton = ({ file, downloadname, btnlabel }) => {
             rel="noopener noreferrer"
         >
             <button
-                className="m-auto font-semibold bg-blue-500 border-2 border-blue-500 text-white py-3 px-5 rounded-full hover:bg-black hover:border-black dark:hover:bg-white dark:hover:text-black dark:hover:border-white">
+                className="m-auto font-semibold bg-blue-500 border-2 border-blue-500 text-white py-4 px-7 rounded-full hover:bg-black hover:border-black dark:hover:bg-white dark:hover:text-black dark:hover:border-white">
                 {btnlabel} <FileDownloadIcon />
             </button>
         </a>

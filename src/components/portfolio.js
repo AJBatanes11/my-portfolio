@@ -15,47 +15,55 @@ const Portfolio = ({ hoverStatusPortfolio }) => {
 
     return (
         <>
-            <RichText
-                heading="Recent Work"
-                subheading=""
-            />
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-20 max-w-screen-xl mx-auto my-20">
-                <ImageHighlight hoverstatus={handleHoverStatus}
-                    image={Penshoppe}
-                    link="https://www.penshoppe.com/"
-                    heading="Penshoppe"
-                    text="Design, Website Development, Custom Software Integrations"
+            <div className="max-w-screen-xl mx-auto my-20">
+                <RichText
+                    heading="Recent Work"
+                    subheading=""
                 />
-                <ImageHighlight hoverstatus={handleHoverStatus}
-                    image={OXGN}
-                    link="https://www.oxgnfashion.com/"
-                    heading="OXGN"
-                    text="Full Website Revamp, Design, Website Development, Custom Software Integrations"
-                />
-                <ImageHighlight hoverstatus={handleHoverStatus}
-                    image={Regatta}
-                    link="http://regattalifestyle.com/"
-                    heading="Regatta"
-                    text="Design, Website Development, Custom Software Integrations"
-                />
-                <ImageHighlight hoverstatus={handleHoverStatus}
-                    image={ForMe}
-                    link="https://www.formeclothing.com/"
-                    heading="ForMe"
-                    text="Full Website Revamp, Design, Website Development, Custom Software Integrations"
-                />
-                <ImageHighlight hoverstatus={handleHoverStatus}
-                    image={Memo}
-                    link="https://memofashion.com/"
-                    heading="Memo"
-                    text="Shop By Collection Revamp, Design, Website Development, Custom Software Integrations"
-                />
-                <ImageHighlight hoverstatus={handleHoverStatus}
-                    image={Bocu}
-                    link="https://boculifestyle.com/"
-                    heading="Bocu"
-                    text="Design, Website Development, Custom Software Integrations"
-                />
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-20 m-auto">
+                    <ImageHighlight
+                        hoverstatus={handleHoverStatus}
+                        image={Penshoppe}
+                        link="https://www.penshoppe.com/"
+                        heading="Penshoppe"
+                        text="Design, Website Development, Custom Software Integrations"
+                    />
+                    <ImageHighlight
+                        hoverstatus={handleHoverStatus}
+                        image={OXGN}
+                        link="https://www.oxgnfashion.com/"
+                        heading="OXGN"
+                        text="Full Website Revamp, Design, Website Development, Custom Software Integrations"
+                    />
+                    <ImageHighlight
+                        hoverstatus={handleHoverStatus}
+                        image={Regatta}
+                        link="http://regattalifestyle.com/"
+                        heading="Regatta"
+                        text="Design, Website Development, Custom Software Integrations"
+                    />
+                    <ImageHighlight
+                        hoverstatus={handleHoverStatus}
+                        image={ForMe}
+                        link="https://www.formeclothing.com/"
+                        heading="ForMe"
+                        text="Full Website Revamp, Design, Website Development, Custom Software Integrations"
+                    />
+                    <ImageHighlight
+                        hoverstatus={handleHoverStatus}
+                        image={Memo}
+                        link="https://memofashion.com/"
+                        heading="Memo"
+                        text="Shop By Collection Revamp, Design, Website Development, Custom Software Integrations"
+                    />
+                    <ImageHighlight
+                        hoverstatus={handleHoverStatus}
+                        image={Bocu}
+                        link="https://boculifestyle.com/"
+                        heading="Bocu"
+                        text="Design, Website Development, Custom Software Integrations"
+                    />
+                </div>
             </div>
         </>
     );

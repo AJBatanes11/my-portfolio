@@ -55,7 +55,7 @@ export const ContactEmailForm = () => {
                     <input
                         type="text" name="user_name"
                         placeholder="Full Name"
-                        autocomplete="off"
+                        autoComplete="off"
                         required
                         className="h-12 min-h-12 bg-transparent text-black dark:text-white border-[1px] border-solid border-zinc-500 rounded-sm py-2 px-4"
                     />
@@ -66,7 +66,7 @@ export const ContactEmailForm = () => {
                         type="tel"
                         name="user_number"
                         placeholder="Contact Number"
-                        autocomplete="off"
+                        autoComplete="off"
                         required
                         className="h-12 min-h-12 bg-transparent text-black dark:text-white border-[1px] border-solid border-zinc-500 rounded-sm py-2 px-4"
                     />
@@ -77,7 +77,7 @@ export const ContactEmailForm = () => {
                         type="email"
                         name="user_email"
                         placeholder="Email"
-                        autocomplete="off"
+                        autoComplete="off"
                         required
                         className="h-12 min-h-12 bg-transparent text-black dark:text-white border-[1px] border-solid border-zinc-500 rounded-sm py-2 px-4"
                     />
@@ -87,7 +87,7 @@ export const ContactEmailForm = () => {
                     <textarea
                         name="message"
                         placeholder="How may I help you?"
-                        autocomplete="off"
+                        autoComplete="off"
                         required
                         className="h-12 min-h-40 bg-transparent text-black dark:text-white border-[1px] border-solid border-zinc-500 rounded-sm py-2 px-4"
                     />

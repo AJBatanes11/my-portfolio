@@ -8,14 +8,13 @@ const About = () => {
         <div className="w-full max-w-screen-xl mx-auto my-20 justify-center text-center">
             <RichText
                 heading="About Me"
-                subheading="With 2 years of experience, I specialize in creating visually appealing and user-friendly websites. From responsive designs to optimized performance, I strive for excellence in every project."
+                subheading="I specialize in crafting visually appealing and user-friendly websites. From designing responsive layouts to optimizing performance, I am dedicated to achieving excellence in every project."
             />
-            <Spacer size="2px" />
             <RichText
                 heading=""
-                subheading="Proficiency in:"
+                subheading="Proficient in:"
             />
-            <div className="grid grid-cols-3 md:grid-cols-3 gap-10 max-w-screen-lg mx-auto my-20">
+            <div className="grid grid-cols-3 md:grid-cols-3 gap-10 max-w-screen-lg mx-auto my-10">
                 <LabeledIcon
                     imgsrc="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/130px-HTML5_logo_and_wordmark.svg.png"
                     label="HTML5"
@@ -53,7 +52,7 @@ const About = () => {
                     label="SEO"
                 />
             </div>
-            <Spacer size="2px" />
+            <Spacer size="2.5rem" />
             <DownloadButton file={CV_AnthonyJamesBatanes}
                 downloadname="CV_AnthonyJamesBatanes"
                 btnlabel="Download CV"

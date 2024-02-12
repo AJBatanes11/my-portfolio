@@ -22,8 +22,8 @@ function Home() {
 
     return (
         <>
-            <MouseCursor isHovered={hoverStatusHome} />
-            <div className='relative mb-52 md:mb-32'>
+            <MouseCursor hoverstatus={hoverStatusHome} />
+            <div className='relative my-10 mb-52 md:mb-32'>
                 <Section id="intro" theme="light" setTheme={setTheme}>
                     <TextImage header="Hi, I am AJ Batanes!"
                         subheader="with extensive experience in the retail industry, demonstrating expertise in utilizing Shopify Liquid to create customized and impactful e-commerce solutions."

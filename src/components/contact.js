@@ -6,7 +6,7 @@ import Socials from './sections/socials';
 const Contact = () => {
     return (
         <>
-            <div className="grid grid-cols-1 lg:grid-cols-[2fr_3fr] gap-8 m-full max-w-screen-xl mx-auto w-full">
+            <div className="grid grid-cols-1 lg:grid-cols-[2fr_3fr] gap-8 m-full max-w-screen-xl mx-auto my-20 w-full">
                 <div className="">
                     <RichText heading="Get in Touch" />
                     <Socials />

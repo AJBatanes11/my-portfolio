@@ -19,7 +19,7 @@ const Section = ({ id, theme, setTheme, children }) => {
   return (
     <section
       id={id}
-      className="bg-white dark:bg-black px-5 py-20 md:py-32 min-h-screen flex flex-col justify-center relative"
+      className="bg-white dark:bg-black px-5 py-16 md:py-28 min-h-screen flex flex-col justify-center relative"
       ref={container}
     >
       {children}

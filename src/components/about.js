@@ -1,6 +1,15 @@
 import React from "react";
 import { RichText, LabeledIcon, DownloadButton, Spacer } from './sections/custom-snippets';
 import CV_AnthonyJamesBatanes from '../assets/CV_AnthonyJamesBatanes.pdf'
+import HTML from '../assets/HTML.png'
+import CSS from '../assets/CSS.png'
+import JavaScript from '../assets/JavaScript.png'
+import Shopify from '../assets/Shopify.png'
+import ReactJS from '../assets/React.png'
+import Tailwind from '../assets/Tailwind.png'
+import BootStrap from '../assets/BootStrap.png'
+import Github from '../assets/GitHub.png'
+import SEO from '../assets/SEO.png'
 
 const About = () => {
 
@@ -16,39 +25,39 @@ const About = () => {
             />
             <div className="grid grid-cols-3 md:grid-cols-3 gap-10 max-w-screen-lg mx-auto my-10">
                 <LabeledIcon
-                    imgsrc="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/130px-HTML5_logo_and_wordmark.svg.png"
+                    imgsrc={HTML}
                     label="HTML5"
                 />
                 <LabeledIcon
-                    imgsrc="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/120px-CSS3_logo_and_wordmark.svg.png"
+                    imgsrc={CSS}
                     label="CSS"
                 />
                 <LabeledIcon
-                    imgsrc="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/600px-JavaScript-logo.png?20120221235433"
+                    imgsrc={JavaScript}
                     label="JavaScript"
                 />
                 <LabeledIcon
-                    imgsrc="https://seeklogo.com/images/S/shopify-logo-1C711BCDE4-seeklogo.com.png"
+                    imgsrc={Shopify}
                     label="Shopify"
                 />
                 <LabeledIcon
-                    imgsrc="https://www.logo.wine/a/logo/React_(web_framework)/React_(web_framework)-Logo.wine.svg"
+                    imgsrc={ReactJS}
                     label="React JS"
                 />
                 <LabeledIcon
-                    imgsrc="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/600px-Tailwind_CSS_Logo.svg.png?20211001194333"
+                    imgsrc={Tailwind}
                     label="Tailwind"
                 />
                 <LabeledIcon
-                    imgsrc="https://seeklogo.com/images/B/bootstrap-logo-3C30FB2A16-seeklogo.com.png"
+                    imgsrc={BootStrap}
                     label="Bootstrap"
                 />
                 <LabeledIcon
-                    imgsrc="https://seeklogo.com/images/G/github-logo-5F384D0265-seeklogo.com.png"
+                    imgsrc={Github}
                     label="Git"
                 />
                 <LabeledIcon
-                    imgsrc="https://thumbs.dreamstime.com/b/seo-logo-magnifying-glass-search-engine-optimization-blue-yellow-red-green-color-98240334.jpg"
+                    imgsrc={SEO}
                     label="SEO"
                 />
             </div>

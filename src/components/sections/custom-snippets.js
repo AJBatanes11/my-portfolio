@@ -4,8 +4,8 @@ import FileDownloadIcon from '@mui/icons-material/FileDownload';
 
 export function TextImage({ header, subheader, highlight, portrait }) {
     return (
-        <div className="flex-1  flex flex-col justify-center lg:max-w-6xl lg:mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-8">
+        <div className="flex justify-center lg:max-w-6xl lg:mx-auto">
+            <div className="flex flex-col-reverse md:flex-row gap-8">
                 <div className="flex flex-col gap-8 justify-center">
                     <h1 className="text-5xl xl:text-7xl font-bold text-black dark:text-white">
                         {header}
@@ -17,7 +17,7 @@ export function TextImage({ header, subheader, highlight, portrait }) {
                     </p>
                 </div>
                 <div className="flex items-center justify-center">
-                    <div className="relative w-full h-auto">
+                    <div className="relative w-full max-w-screen-sm md:max-w-full h-auto">
                         <img
                             src={portrait}
                             className="object-contain rounded-full"

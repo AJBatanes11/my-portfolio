@@ -55,7 +55,7 @@ export const Socials = () => {
                 </div>
                 <div className="w-full h-auto m-auto ">
                     <a
-                        href="https://www.linkedin.com/in/aj-batanes-9116b3175/"
+                        href="https://www.linkedin.com/in/ajbatanes/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex flex-row align-middle"

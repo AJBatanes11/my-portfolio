@@ -106,7 +106,7 @@ export const MouseCursor = ({ isHovered }) => {
     return (
         <div className="mouse-cursor">
             <motion.div
-                className="cursor pointer-events-none hidden overflow-hidden text-wrap text-center sm:block z-40 rounded-full w-2 h-2 bg-zinc-500 text-white dark:text-black fixed transition-none duration-0 animate-none"
+                className="cursor pointer-events-none hidden overflow-hidden text-wrap text-center sm:block z-40 rounded-full w-2 h-2 bg-zinc-500 text-black fixed transition-none duration-0 animate-none"
                 variants={variants}
                 animate={cursorVariant}>
                 <p className="cursor-text m-auto p-5 text-xs font-semibold flex justify-center items-center flex-wrap h-full">

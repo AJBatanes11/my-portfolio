@@ -6,7 +6,7 @@ export function TextImage({ header, subheader, highlight, portrait }) {
     return (
         <div className="flex justify-center lg:max-w-6xl lg:mx-auto">
             <div className="flex flex-col-reverse md:flex-row gap-8">
-                <div className="flex flex-col gap-8 justify-center">
+                <div className="flex flex-col gap-8 justify-center basis-2/5">
                     <h1 className="text-5xl xl:text-7xl font-bold text-black dark:text-white">
                         {header}
                     </h1>
@@ -16,7 +16,7 @@ export function TextImage({ header, subheader, highlight, portrait }) {
                         </span> {subheader}
                     </p>
                 </div>
-                <div className="flex items-center justify-center">
+                <div className="flex items-center justify-center basis-3/5">
                     <div className="relative w-full max-w-screen-sm md:max-w-full h-auto">
                         <img
                             src={portrait}

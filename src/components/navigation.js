@@ -8,7 +8,7 @@ function Navigation() {
 
     const toggleHamburger = () => {
         setHamburgerOpen(!hamburgerOpen);
-        console.log({ hamburgerOpen });
+        
         if (hamburgerOpen) {
             document.querySelector('.nav-drawer').style.height = '100%';
         } else {

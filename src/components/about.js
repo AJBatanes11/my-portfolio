@@ -45,16 +45,16 @@ const About = () => {
                     label="React JS"
                 />
                 <LabeledIcon
-                    imgsrc={Tailwind}
-                    label="Tailwind"
+                    imgsrc={Github}
+                    label="Git"
                 />
                 <LabeledIcon
                     imgsrc={BootStrap}
                     label="Bootstrap"
                 />
                 <LabeledIcon
-                    imgsrc={Github}
-                    label="Git"
+                    imgsrc={Tailwind}
+                    label="Tailwind"
                 />
                 <LabeledIcon
                     imgsrc={SEO}

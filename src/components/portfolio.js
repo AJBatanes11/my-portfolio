@@ -62,7 +62,7 @@ const Portfolio = ({ hoverStatusPortfolio }) => {
                         image={Bocu}
                         link="https://boculifestyle.com/"
                         heading="Bocu"
-                        text="Design, Website Development, Custom Software Integrations"
+                        text="Website Revamp, Design, Website Development, Custom Software Integrations"
                     />
                 </div>
             </div>

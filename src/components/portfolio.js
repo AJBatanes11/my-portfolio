@@ -6,6 +6,8 @@ import Regatta from '../assets/Regatta.jpg';
 import ForMe from '../assets/ForMe.jpg';
 import Memo from '../assets/Memo.jpg';
 import Bocu from '../assets/Bocu.jpg';
+import ModandNoble from '../assets/ModandNoble.jpg';
+import Tiwflix from '../assets/Tiwflix.png';
 
 const Portfolio = ({ hoverStatusPortfolio }) => {
 
@@ -22,6 +24,13 @@ const Portfolio = ({ hoverStatusPortfolio }) => {
                 />
                 <Spacer size="2.5rem" />
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-20 m-auto">
+                    <ImageHighlight
+                        hoverstatus={handleHoverStatus}
+                        image={ModandNoble}
+                        link="https://www.modandnoble.com/"
+                        heading="Mod & Noble"
+                        text="Design, End-to-end website creation, Website Development, Process Improvement & Consulting Services"
+                    />
                     <ImageHighlight
                         hoverstatus={handleHoverStatus}
                         image={Penshoppe}
@@ -63,6 +72,13 @@ const Portfolio = ({ hoverStatusPortfolio }) => {
                         link="https://boculifestyle.com/"
                         heading="Bocu"
                         text="Website Revamp, Design, Website Development, Custom Software Integrations"
+                    />
+                    <ImageHighlight
+                        hoverstatus={handleHoverStatus}
+                        image={Tiwflix}
+                        link="https://ajbatanes11.github.io/tiwflix/"
+                        heading="Tiwflix"
+                        text="Personal Website, Design, End-to-end Development, API Integration"
                     />
                 </div>
             </div>

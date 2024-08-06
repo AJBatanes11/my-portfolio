@@ -26,13 +26,6 @@ const Portfolio = ({ hoverStatusPortfolio }) => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-20 m-auto">
                     <ImageHighlight
                         hoverstatus={handleHoverStatus}
-                        image={ModandNoble}
-                        link="https://www.modandnoble.com/"
-                        heading="Mod & Noble"
-                        text="Design, End-to-end website creation, Website Development, Process Improvement & Consulting Services"
-                    />
-                    <ImageHighlight
-                        hoverstatus={handleHoverStatus}
                         image={Penshoppe}
                         link="https://www.penshoppe.com/"
                         heading="Penshoppe"
@@ -47,17 +40,17 @@ const Portfolio = ({ hoverStatusPortfolio }) => {
                     />
                     <ImageHighlight
                         hoverstatus={handleHoverStatus}
-                        image={Regatta}
-                        link="http://regattalifestyle.com/"
-                        heading="Regatta"
-                        text="Design, Website Development, Custom Software Integrations"
-                    />
-                    <ImageHighlight
-                        hoverstatus={handleHoverStatus}
                         image={ForMe}
                         link="https://www.formeclothing.com/"
                         heading="ForMe"
                         text="Full Website Revamp, Design, Website Development, Custom Software Integrations"
+                    />
+                    <ImageHighlight
+                        hoverstatus={handleHoverStatus}
+                        image={Regatta}
+                        link="http://regattalifestyle.com/"
+                        heading="Regatta"
+                        text="Design, Website Development, Custom Software Integrations"
                     />
                     <ImageHighlight
                         hoverstatus={handleHoverStatus}
@@ -71,7 +64,14 @@ const Portfolio = ({ hoverStatusPortfolio }) => {
                         image={Bocu}
                         link="https://boculifestyle.com/"
                         heading="Bocu"
-                        text="Website Revamp, Design, Website Development, Custom Software Integrations"
+                        text="Full Website Revamp, Design, Website Development, Custom Software Integrations"
+                    />
+                    <ImageHighlight
+                        hoverstatus={handleHoverStatus}
+                        image={ModandNoble}
+                        link="https://www.modandnoble.com/"
+                        heading="Mod & Noble"
+                        text="Design, End-to-end website creation, Website Development, Process Improvement & Consulting Services"
                     />
                     <ImageHighlight
                         hoverstatus={handleHoverStatus}

@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/my-portfolio/static/css/main.dff6416a.css",
-    "main.js": "/my-portfolio/static/js/main.0ccb1f71.js",
+    "main.js": "/my-portfolio/static/js/main.7ceb6e4c.js",
     "static/js/592.9525cf69.chunk.js": "/my-portfolio/static/js/592.9525cf69.chunk.js",
     "static/media/OXGN.jpg": "/my-portfolio/static/media/OXGN.b2c7002420e217ca9622.jpg",
     "static/media/portrait.jpg": "/my-portfolio/static/media/portrait.58de5505d09a00384583.jpg",
@@ -10,8 +10,8 @@
     "static/media/Regatta.jpg": "/my-portfolio/static/media/Regatta.989dc7a968aff33fd78a.jpg",
     "static/media/React.png": "/my-portfolio/static/media/React.20bbd934e2f6aec6abdf.png",
     "static/media/ForMe.jpg": "/my-portfolio/static/media/ForMe.9e5e21bece4aad41dab2.jpg",
+    "static/media/CV_AnthonyJamesBatanes.pdf": "/my-portfolio/static/media/CV_AnthonyJamesBatanes.3491ec66ccdfcb8cd162.pdf",
     "static/media/SEO.png": "/my-portfolio/static/media/SEO.6bbd01147e900d19db1f.png",
-    "static/media/CV_AnthonyJamesBatanes.pdf": "/my-portfolio/static/media/CV_AnthonyJamesBatanes.701fa850e2ef06240410.pdf",
     "static/media/Bocu.jpg": "/my-portfolio/static/media/Bocu.80a68f97440049b3de33.jpg",
     "static/media/Shopify.png": "/my-portfolio/static/media/Shopify.484e8af7d2ae23ad61c3.png",
     "static/media/Memo.jpg": "/my-portfolio/static/media/Memo.9a6843f087d3c8510212.jpg",
@@ -24,11 +24,11 @@
     "index.html": "/my-portfolio/index.html",
     "static/media/AJLogo.svg": "/my-portfolio/static/media/AJLogo.20242c51682e63b9a311d928fdded4a0.svg",
     "main.dff6416a.css.map": "/my-portfolio/static/css/main.dff6416a.css.map",
-    "main.0ccb1f71.js.map": "/my-portfolio/static/js/main.0ccb1f71.js.map",
+    "main.7ceb6e4c.js.map": "/my-portfolio/static/js/main.7ceb6e4c.js.map",
     "592.9525cf69.chunk.js.map": "/my-portfolio/static/js/592.9525cf69.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dff6416a.css",
-    "static/js/main.0ccb1f71.js"
+    "static/js/main.7ceb6e4c.js"
   ]
 }

@@ -66,13 +66,13 @@ const Portfolio = ({ hoverStatusPortfolio }) => {
                         heading="Bocu"
                         text="Full Website Revamp, Design, Website Development, Custom Software Integrations"
                     />
-                    <ImageHighlight
+                    {/* <ImageHighlight
                         hoverstatus={handleHoverStatus}
                         image={ModandNoble}
                         link="https://www.modandnoble.com/"
                         heading="Mod & Noble"
                         text="Design, End-to-end website creation, Website Development, Process Improvement & Consulting Services"
-                    />
+                    /> */}
                     <ImageHighlight
                         hoverstatus={handleHoverStatus}
                         image={Tiwflix}

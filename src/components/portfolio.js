@@ -8,6 +8,7 @@ import Memo from '../assets/Memo.jpg';
 import Bocu from '../assets/Bocu.jpg';
 import ModandNoble from '../assets/ModandNoble.jpg';
 import Tiwflix from '../assets/Tiwflix.png';
+import SoulAesthethix from '../assets/SoulAesthetix.png';
 
 const Portfolio = ({ hoverStatusPortfolio }) => {
 
@@ -65,6 +66,13 @@ const Portfolio = ({ hoverStatusPortfolio }) => {
                         link="https://boculifestyle.com/"
                         heading="Bocu"
                         text="Full Website Revamp, Design, Website Development, Custom Software Integrations"
+                    />
+                    <ImageHighlight
+                        hoverstatus={handleHoverStatus}
+                        image={SoulAesthethix}
+                        link="https://soulaesthetix.com.au/"
+                        heading="SoulAesthetix"
+                        text="Design, Website Revamp, Website Development, Custom Sections"
                     />
                     {/* <ImageHighlight
                         hoverstatus={handleHoverStatus}

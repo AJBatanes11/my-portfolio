@@ -9,6 +9,11 @@ import Bocu from '../assets/Bocu.jpg';
 import ModandNoble from '../assets/ModandNoble.jpg';
 import Tiwflix from '../assets/Tiwflix.png';
 import SoulAesthethix from '../assets/SoulAesthetix.png';
+import LaunchtoProfitMedia from '../assets/LaunchtoProfitMedia.jpg';
+import ArianaSpices from '../assets/ArianaSpices.jpg';
+import TheCutBuddy from '../assets/TheCutBuddy.jpg';
+import TheHoopGang from '../assets/TheHoopGang.jpg';
+import HenkanCollagen from '../assets/HenkanCollagen.jpg';
 
 const Portfolio = ({ hoverStatusPortfolio }) => {
 
@@ -72,6 +77,41 @@ const Portfolio = ({ hoverStatusPortfolio }) => {
                         image={SoulAesthethix}
                         link="https://soulaesthetix.com.au/"
                         heading="SoulAesthetix"
+                        text="Design, Website Revamp, Website Development, Custom Sections"
+                    />
+                    <ImageHighlight
+                        hoverstatus={handleHoverStatus}
+                        image={LaunchtoProfitMedia}
+                        link="https://soulaesthetix.com.au/"
+                        heading="Launch to Profit Media"
+                        text="Design, Website Revamp, Website Development, Custom Sections"
+                    />
+                    <ImageHighlight
+                        hoverstatus={handleHoverStatus}
+                        image={ArianaSpices}
+                        link="https://soulaesthetix.com.au/"
+                        heading="Ariana Spices"
+                        text="Design, Website Revamp, Website Development, Custom Sections"
+                    />
+                    <ImageHighlight
+                        hoverstatus={handleHoverStatus}
+                        image={TheCutBuddy}
+                        link="https://soulaesthetix.com.au/"
+                        heading="The Cut Buddy"
+                        text="Design, Website Revamp, Website Development, Custom Sections"
+                    />
+                    <ImageHighlight
+                        hoverstatus={handleHoverStatus}
+                        image={TheHoopGang}
+                        link="https://soulaesthetix.com.au/"
+                        heading="The Hoop Gang"
+                        text="Design, Website Revamp, Website Development, Custom Sections"
+                    />
+                    <ImageHighlight
+                        hoverstatus={handleHoverStatus}
+                        image={HenkanCollagen}
+                        link="https://soulaesthetix.com.au/"
+                        heading="Henkan Collagen"
                         text="Design, Website Revamp, Website Development, Custom Sections"
                     />
                     {/* <ImageHighlight

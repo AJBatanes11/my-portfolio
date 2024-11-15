@@ -81,36 +81,29 @@ const Portfolio = ({ hoverStatusPortfolio }) => {
                     />
                     <ImageHighlight
                         hoverstatus={handleHoverStatus}
-                        image={LaunchtoProfitMedia}
-                        link="https://soulaesthetix.com.au/"
-                        heading="Launch to Profit Media"
-                        text="Design, Website Revamp, Website Development, Custom Sections"
-                    />
-                    <ImageHighlight
-                        hoverstatus={handleHoverStatus}
-                        image={ArianaSpices}
-                        link="https://soulaesthetix.com.au/"
-                        heading="Ariana Spices"
-                        text="Design, Website Revamp, Website Development, Custom Sections"
-                    />
-                    <ImageHighlight
-                        hoverstatus={handleHoverStatus}
-                        image={TheCutBuddy}
-                        link="https://soulaesthetix.com.au/"
-                        heading="The Cut Buddy"
-                        text="Design, Website Revamp, Website Development, Custom Sections"
-                    />
-                    <ImageHighlight
-                        hoverstatus={handleHoverStatus}
                         image={TheHoopGang}
-                        link="https://soulaesthetix.com.au/"
+                        link="https://thehoopgang.com/"
                         heading="The Hoop Gang"
                         text="Design, Website Revamp, Website Development, Custom Sections"
                     />
                     <ImageHighlight
                         hoverstatus={handleHoverStatus}
+                        image={TheCutBuddy}
+                        link="https://thecutbuddy.com/"
+                        heading="The Cut Buddy"
+                        text="Design, Website Revamp, Website Development, Custom Sections"
+                    />
+                    <ImageHighlight
+                        hoverstatus={handleHoverStatus}
+                        image={ArianaSpices}
+                        link="https://arianaspices.com/"
+                        heading="Ariana Spices"
+                        text="Design, Website Revamp, Website Development, Custom Sections"
+                    />
+                    <ImageHighlight
+                        hoverstatus={handleHoverStatus}
                         image={HenkanCollagen}
-                        link="https://soulaesthetix.com.au/"
+                        link="https://henkancollagen.myshopify.com/"
                         heading="Henkan Collagen"
                         text="Design, Website Revamp, Website Development, Custom Sections"
                     />
@@ -121,6 +114,13 @@ const Portfolio = ({ hoverStatusPortfolio }) => {
                         heading="Mod & Noble"
                         text="Design, End-to-end website creation, Website Development, Process Improvement & Consulting Services"
                     /> */}
+                    <ImageHighlight
+                        hoverstatus={handleHoverStatus}
+                        image={LaunchtoProfitMedia}
+                        link="https://www.launchtoprofitmedia.com/"
+                        heading="Launch to Profit Media"
+                        text="Design, Website Revamp, Website Development, Custom Sections"
+                    />
                     <ImageHighlight
                         hoverstatus={handleHoverStatus}
                         image={Tiwflix}

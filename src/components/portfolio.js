@@ -14,6 +14,7 @@ import ArianaSpices from '../assets/ArianaSpices.jpg';
 import TheCutBuddy from '../assets/TheCutBuddy.jpg';
 import TheHoopGang from '../assets/TheHoopGang.jpg';
 import HenkanCollagen from '../assets/HenkanCollagen.jpg';
+import HillsideGarden from '../assets/HillsideGarden.jpg';
 
 const Portfolio = ({ hoverStatusPortfolio }) => {
 
@@ -74,16 +75,16 @@ const Portfolio = ({ hoverStatusPortfolio }) => {
                     />
                     <ImageHighlight
                         hoverstatus={handleHoverStatus}
-                        image={SoulAesthethix}
-                        link="https://soulaesthetix.com.au/"
-                        heading="SoulAesthetix"
+                        image={TheHoopGang}
+                        link="https://thehoopgang.com/"
+                        heading="The Hoop Gang"
                         text="Design, Website Revamp, Website Development, Custom Sections"
                     />
                     <ImageHighlight
                         hoverstatus={handleHoverStatus}
-                        image={TheHoopGang}
-                        link="https://thehoopgang.com/"
-                        heading="The Hoop Gang"
+                        image={SoulAesthethix}
+                        link="https://soulaesthetix.com.au/"
+                        heading="SoulAesthetix"
                         text="Design, Website Revamp, Website Development, Custom Sections"
                     />
                     <ImageHighlight
@@ -102,24 +103,31 @@ const Portfolio = ({ hoverStatusPortfolio }) => {
                     />
                     <ImageHighlight
                         hoverstatus={handleHoverStatus}
+                        image={HillsideGarden}
+                        link="https://hillsidegarden.com.ph/"
+                        heading="Hillside Garden"
+                        text="Design, Website Revamp, Website Development, Custom Sections"
+                    />
+                    <ImageHighlight
+                        hoverstatus={handleHoverStatus}
                         image={HenkanCollagen}
                         link="https://henkancollagen.myshopify.com/"
                         heading="Henkan Collagen"
                         text="Design, Website Revamp, Website Development, Custom Sections"
                     />
-                    {/* <ImageHighlight
-                        hoverstatus={handleHoverStatus}
-                        image={ModandNoble}
-                        link="https://www.modandnoble.com/"
-                        heading="Mod & Noble"
-                        text="Design, End-to-end website creation, Website Development, Process Improvement & Consulting Services"
-                    /> */}
                     <ImageHighlight
                         hoverstatus={handleHoverStatus}
                         image={LaunchtoProfitMedia}
                         link="https://www.launchtoprofitmedia.com/"
                         heading="Launch to Profit Media"
                         text="Design, Website Revamp, Website Development, Custom Sections"
+                    />
+                    <ImageHighlight
+                        hoverstatus={handleHoverStatus}
+                        image={ModandNoble}
+                        link="https://www.modandnoble.com/"
+                        heading="Mod & Noble"
+                        text="Design, End-to-end website creation, Website Development, Process Improvement & Consulting Services"
                     />
                     <ImageHighlight
                         hoverstatus={handleHoverStatus}

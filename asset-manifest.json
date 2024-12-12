@@ -1,11 +1,12 @@
 {
   "files": {
     "main.css": "/my-portfolio/static/css/main.dff6416a.css",
-    "main.js": "/my-portfolio/static/js/main.f59782ca.js",
+    "main.js": "/my-portfolio/static/js/main.9f73a78a.js",
     "static/js/592.9525cf69.chunk.js": "/my-portfolio/static/js/592.9525cf69.chunk.js",
     "static/media/HenkanCollagen.jpg": "/my-portfolio/static/media/HenkanCollagen.69e85648772226655034.jpg",
     "static/media/SoulAesthetix.png": "/my-portfolio/static/media/SoulAesthetix.90f48c2bb84993bca111.png",
     "static/media/ArianaSpices.jpg": "/my-portfolio/static/media/ArianaSpices.c0ff6fd35f450b554a6b.jpg",
+    "static/media/HillsideGarden.jpg": "/my-portfolio/static/media/HillsideGarden.dccaae2966480d67307f.jpg",
     "static/media/OXGN.jpg": "/my-portfolio/static/media/OXGN.b2c7002420e217ca9622.jpg",
     "static/media/portrait.jpg": "/my-portfolio/static/media/portrait.58de5505d09a00384583.jpg",
     "static/media/ModandNoble.jpg": "/my-portfolio/static/media/ModandNoble.2d9506b27437a9c549f6.jpg",
@@ -30,11 +31,11 @@
     "index.html": "/my-portfolio/index.html",
     "static/media/AJLogo.svg": "/my-portfolio/static/media/AJLogo.20242c51682e63b9a311d928fdded4a0.svg",
     "main.dff6416a.css.map": "/my-portfolio/static/css/main.dff6416a.css.map",
-    "main.f59782ca.js.map": "/my-portfolio/static/js/main.f59782ca.js.map",
+    "main.9f73a78a.js.map": "/my-portfolio/static/js/main.9f73a78a.js.map",
     "592.9525cf69.chunk.js.map": "/my-portfolio/static/js/592.9525cf69.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dff6416a.css",
-    "static/js/main.f59782ca.js"
+    "static/js/main.9f73a78a.js"
   ]
 }

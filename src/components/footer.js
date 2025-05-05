@@ -10,7 +10,7 @@ const Footer = () => {
                         <img src={AJLogo} alt={AJLogo} />
                     </div>
                     <span className="self-center text-base font-semibold whitespace-nowrap text-white dark:text-black">
-                        Designed and Built by AJ Batanes ©2024
+                        Designed and Built by AJ Batanes ©{new Date().getFullYear()}
                     </span>
                 </a>
             </div>

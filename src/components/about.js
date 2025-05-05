@@ -10,6 +10,9 @@ import Tailwind from '../assets/Tailwind.png'
 import BootStrap from '../assets/BootStrap.png'
 import Github from '../assets/GitHub.png'
 import SEO from '../assets/SEO.png'
+import PHP from '../assets/PHP.png'
+import Figma from '../assets/Figma.png'
+import Wordpress from '../assets/Wordpress.png'
 
 const About = () => {
 
@@ -37,8 +40,16 @@ const About = () => {
                     label="JavaScript"
                 />
                 <LabeledIcon
+                    imgsrc={PHP}
+                    label="PHP"
+                />
+                <LabeledIcon
                     imgsrc={Shopify}
                     label="Shopify"
+                />
+                <LabeledIcon
+                    imgsrc={Wordpress}
+                    label="Wordpress"
                 />
                 <LabeledIcon
                     imgsrc={ReactJS}
@@ -59,6 +70,10 @@ const About = () => {
                 <LabeledIcon
                     imgsrc={SEO}
                     label="SEO"
+                />
+                <LabeledIcon
+                    imgsrc={Figma}
+                    label="Figma"
                 />
             </div>
             <Spacer size="2.5rem" />

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import portrait from '../assets/portrait.jpg';
 import Section from './sections/section';
-import { TextImage, MouseCursor } from './sections/custom-snippets'
+import { TextImage, MouseCursor, RichText } from './sections/custom-snippets'
 import Portfolio from './portfolio';
 import About from './about';
 import Contact from './contact';
@@ -29,7 +29,13 @@ function Home() {
                         portrait={portrait}
                     />
                 </Section>
-                <Section id="portfolio" theme="dark"  setTheme={setTheme}>
+                <Section id="intro" theme="dark" setTheme={setTheme}>
+                    <RichText
+                        heading="Stay tuned!"
+                        subheading="I'm currently working on my new website. Exciting updates are coming soon."
+                    />
+                </Section>
+                {/* <Section id="portfolio" theme="dark"  setTheme={setTheme}>
                     <Portfolio hoverStatusPortfolio={handleHoverStatus} />
                 </Section>
                 <Section id="about" theme="light" setTheme={setTheme}>
@@ -37,7 +43,7 @@ function Home() {
                 </Section>
                 <Section id="contact" theme="dark" setTheme={setTheme}>
                     <Contact />
-                </Section>
+                </Section> */}
             </div>
         </>
     );

@@ -191,3 +191,43 @@ export const DownloadButton = ({ file, downloadname, btnlabel }) => {
         </a>
     );
 };
+
+export const PopupModal = () => {
+    const [show, setShow] = useState(false);
+
+    useEffect(() => {
+        const alreadyShown = sessionStorage.getItem("popupShown");
+        if (!alreadyShown) {
+            setTimeout(() => {
+                setShow(true);
+                sessionStorage.setItem("popupShown", "true");
+            }, 2000);
+        }
+    }, []);
+
+    if (!show) return null;
+
+    return (
+        <div className="fixed inset-0 z-50 m-0 p-0">
+            <div className="relative w-full h-full p-6 lg:p-20 bg-black/70 backdrop-blur-sm flex items-center justify-center">
+                <div className="w-full max-w-md bg-white rounded-2xl shadow-lg p-8 text-center">
+                    <button onClick={() => setShow(false)} className='text-xl absolute top-3 right-3 text-gray-500 hover:text-black' >
+                        &times;
+                    </button>
+                    <h2 className="text-2xl font-semibold mb-4">Heads up! 👋</h2>
+                    <p className="text-gray-700 mb-6">
+                        I’ve launched a brand new portfolio — check it out for updated work, case studies, and more!
+                    </p>
+                    <a
+                        href="https://ajbatanes.vercel.app"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-block bg-black text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition"
+                    >
+                        Visit My New Site
+                    </a>
+                </div>
+            </div>
+        </div>
+    );
+};

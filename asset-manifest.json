@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/my-portfolio/static/css/main.0efd988f.css",
-    "main.js": "/my-portfolio/static/js/main.33846b82.js",
+    "main.js": "/my-portfolio/static/js/main.0eb2f57d.js",
     "static/js/592.9525cf69.chunk.js": "/my-portfolio/static/js/592.9525cf69.chunk.js",
     "static/media/HenkanCollagen.jpg": "/my-portfolio/static/media/HenkanCollagen.69e85648772226655034.jpg",
     "static/media/SoulAesthetix.png": "/my-portfolio/static/media/SoulAesthetix.90f48c2bb84993bca111.png",
@@ -35,11 +35,11 @@
     "index.html": "/my-portfolio/index.html",
     "static/media/AJLogo.svg": "/my-portfolio/static/media/AJLogo.20242c51682e63b9a311d928fdded4a0.svg",
     "main.0efd988f.css.map": "/my-portfolio/static/css/main.0efd988f.css.map",
-    "main.33846b82.js.map": "/my-portfolio/static/js/main.33846b82.js.map",
+    "main.0eb2f57d.js.map": "/my-portfolio/static/js/main.0eb2f57d.js.map",
     "592.9525cf69.chunk.js.map": "/my-portfolio/static/js/592.9525cf69.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0efd988f.css",
-    "static/js/main.33846b82.js"
+    "static/js/main.0eb2f57d.js"
   ]
 }
